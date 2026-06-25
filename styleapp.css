@@ -1,12 +1,40 @@
 /* =========================
-   BASE
+   RESET GLOBAL
+========================= */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #1e2a38;
+}
+
+/* =========================
+   FOND PAR PAGE (IMPORTANT)
 ========================= */
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
   background: #f5f7fb;
-  color: #1e2a38;
+}
+
+/* Seconde */
+body.seconde {
+  background: #f3e8ff;
+}
+
+/* Spe */
+body.spe {
+  background: #fff1e6;
+}
+
+/* ST2S */
+body.st2s {
+  background: #ffe6ef;
+}
+
+/* BTS */
+body.bts {
+  background: #e8f2ff;
 }
 
 /* =========================
@@ -19,6 +47,11 @@ header {
   color: white;
   text-align: center;
   padding: 40px 20px;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
 }
 
 /* info haut gauche */
@@ -118,6 +151,16 @@ header {
 }
 
 /* =========================
+   MAIN (IMPORTANT ANTI-RUPTURE)
+========================= */
+
+main {
+  min-height: 100vh;
+  padding: 20px;
+  background: transparent;
+}
+
+/* =========================
    SECTIONS
 ========================= */
 
@@ -126,32 +169,10 @@ header {
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  padding: 20px;
 }
 
 .sub-section.active {
   display: block;
-}
-
-/* =========================
-   CARDS
-========================= */
-
-.card {
-  background: white;
-  padding: 18px;
-  border-radius: 14px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-  transition: 0.2s;
-}
-
-.card:hover {
-  transform: translateY(-2px);
-}
-
-.card h3 {
-  margin-top: 0;
-  color: #6f7680;
 }
 
 /* =========================
@@ -173,7 +194,28 @@ header {
 }
 
 /* =========================
-   ACTIONS (BOUTONS)
+   CARD
+========================= */
+
+.card {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #6f7680;
+}
+
+/* =========================
+   ACTION BUTTONS
 ========================= */
 
 .actions {
@@ -203,56 +245,34 @@ header {
    COULEURS PAR PAGE
 ========================= */
 
-/* SECONDE */
-.seconde main {
-  background: #f3e8ff;
-}
-
 .seconde .card {
   border-left: 6px solid #a78bfa;
-}
-
-.seconde .actions a {
-  background: rgba(167,139,250,0.18);
-}
-
-/* SPE */
-.spe main {
-  background: #fff1e6;
 }
 
 .spe .card {
   border-left: 6px solid #fdba74;
 }
 
-.spe .actions a {
-  background: rgba(253,186,116,0.18);
-}
-
-/* ST2S */
-.st2s main {
-  background: #ffe6ef;
-}
-
 .st2s .card {
   border-left: 6px solid #f9a8d4;
-}
-
-.st2s .actions a {
-  background: rgba(249,168,213,0.18);
-}
-
-/* BTS */
-.bts main {
-  background: #e8f2ff;
 }
 
 .bts .card {
   border-left: 6px solid #93c5fd;
 }
 
-.bts .actions a {
-  background: rgba(147,197,253,0.18);
+/* boutons */
+.seconde .actions a { background: rgba(167,139,250,0.18); }
+.spe .actions a     { background: rgba(253,186,116,0.18); }
+.st2s .actions a    { background: rgba(249,168,213,0.18); }
+.bts .actions a     { background: rgba(147,197,253,0.18); }
+
+/* hover harmonisé */
+.seconde .actions a:hover,
+.spe .actions a:hover,
+.st2s .actions a:hover,
+.bts .actions a:hover {
+  filter: brightness(1.1);
 }
 
 /* =========================
