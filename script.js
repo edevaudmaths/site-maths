@@ -1,3 +1,5 @@
+
+/* ===== SOUS-ONGLETS ===== */
 function showSec(id) {
 
   const sections = document.querySelectorAll(".sub-section");
@@ -11,7 +13,7 @@ function showSec(id) {
   event.target.classList.add("active");
 }
 
-/* MENU ACTIF AUTOMATIQUE */
+/* ===== MENU ACTIF AUTOMATIQUE ===== */
 document.addEventListener("DOMContentLoaded", () => {
 
   const links = document.querySelectorAll(".menu-btn");
@@ -25,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-/* RECHERCHE */
+/* ===== RECHERCHE ===== */
 function searchChapters() {
 
   const input = document.getElementById("searchInput");
@@ -38,20 +40,4 @@ function searchChapters() {
     card.style.display = text.includes(filter) ? "" : "none";
   });
 
-}  const input = document.getElementById("searchInput");
-  const filter = input.value.toLowerCase();
-
-  const chapters = document.querySelectorAll(".card");
-
-  chapters.forEach(card => {
-
-    const text = card.textContent.toLowerCase();
-
-    if (text.includes(filter)) {
-      card.style.display = "";
-    } else {
-      card.style.display = "none";
-    }
-
-  });
 }
