@@ -237,27 +237,22 @@ main {
 /* =========================
    ACCUEIL (IMPORTANT BUG FIX)
 ========================= */
-
 .home-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 14px;          /* ↓ réduit */
   max-width: 700px;
-  margin: 40px auto;
-  padding: 20px;
+  margin: 20px auto;  /* ↓ réduit */
+  padding: 10px;      /* ↓ réduit */
 }
 
 .app-card {
+  height: 100px;      /* ↓ légèrement réduit */
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 120px;
-  border-radius: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
 }
+
 
 .app-card.seconde { background: #a78bfa; }
 .app-card.spe     { background: #fdba74; }
