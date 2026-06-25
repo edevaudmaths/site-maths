@@ -308,23 +308,57 @@ header {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 600px) {
+
+  /* cartes en colonne propre */
+  .home-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
+    margin: 20px auto;
+  }
+
+  /* cartes plus grandes et lisibles */
+  .app-card {
+    height: 110px;
+    font-size: 18px;
+  }
+
+  /* bienvenue plus compact */
+  .card.welcome {
+    margin: 15px 10px;
+    padding: 18px;
+  }
+
+  /* header plus léger */
+  header {
+    padding: 25px 10px;
+  }
+
+  .top-left-info {
+    font-size: 10px;
+  }
+}
 /* ===== CADRE BIENVENUE ===== */
-.welcome-card {
-  background: white;
+.card.welcome {
   max-width: 800px;
   margin: 30px auto 20px auto;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  padding: 25px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-left: 6px solid #a0a7b1;
   text-align: center;
 }
 
-.welcome-card h2 {
+.card.welcome h2 {
   margin-top: 0;
-  color: #0b2d4d;
+  color: #6f7680;
 }
 
-.welcome-card p {
+.card.welcome p {
   color: #555;
-  line-height: 1.5;
+  line-height: 1.6;
+  font-size: 15px;
 }
