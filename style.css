@@ -40,6 +40,7 @@ header {
   color: white;
   padding: 20px;
   text-align: center;
+  position: relative;
 }
 
 /* ===== MENU ===== */
@@ -227,4 +228,13 @@ main {
 
 .footer a:hover {
   text-decoration: underline;
+}
+.top-left-info {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  text-align: left;
+  font-size: 12px;
+  color: white;
+  line-height: 1.3;
 }
