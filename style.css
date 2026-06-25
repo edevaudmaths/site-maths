@@ -1,3 +1,5 @@
+
+/* ===== BASE ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -5,7 +7,7 @@ body {
   color: #1e2a38;
 }
 
-/* HEADER */
+/* ===== HEADER ===== */
 header {
   background: #0b2d4d;
   color: white;
@@ -13,7 +15,7 @@ header {
   text-align: center;
 }
 
-/* MENU */
+/* ===== MENU ===== */
 .menu {
   display: flex;
   justify-content: center;
@@ -42,72 +44,28 @@ header {
   color: white;
 }
 
-/* CONTENU */
-main {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-}
-
-/* CARTES CHAPITRES */
-.card {
-  background: white;
-  padding: 18px;
-  margin-bottom: 15px;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-}
-
-.card h3 {
-  margin-top: 0;
-  color: #0b2d4d;
-}
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-}
-
-
-/* BOUTONS RESSOURCES */
-.actions {
+/* ===== SEARCH ===== */
+.search-box {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
+  justify-content: center;
+  margin: 15px 0;
 }
 
-.actions a {
-  background: #1f6feb;
-  color: white;
-  padding: 8px 12px;
+.search-box input {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px 12px;
   border-radius: 10px;
-  text-decoration: none;
+  border: 2px solid #0b2d4d;
+  outline: none;
   font-size: 14px;
 }
 
-.actions a:hover {
-  background: #0b4fc2;
+.search-box input:focus {
+  border-color: #1f6feb;
 }
 
-.external-btn {
-  display: inline-block;
-  margin-top: 10px;
-  background: #0b2d4d;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.external-btn:hover {
-  background: #1f6feb;
-}
-
+/* ===== SUB MENU ===== */
 .sub-menu {
   display: flex;
   justify-content: center;
@@ -131,7 +89,7 @@ main {
   color: white;
 }
 
-/* sections */
+/* ===== SECTIONS ===== */
 .sub-section {
   display: none;
   max-width: 900px;
@@ -143,26 +101,21 @@ main {
   display: block;
 }
 
-.search-box {
-  display: flex;
-  justify-content: center;
-  margin: 15px 0;
+/* ===== CARDS ===== */
+.card {
+  background: white;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
-.search-box input {
-  width: 60%;
-  max-width: 400px;
-  padding: 10px 12px;
-  border-radius: 10px;
-  border: 2px solid #0b2d4d;
-  outline: none;
-  font-size: 14px;
+.card h3 {
+  margin-top: 0;
+  color: #0b2d4d;
 }
 
-.search-box input:focus {
-  border-color: #1f6feb;
-}
-
+/* ===== 2 COLONNES ===== */
 .cards-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -170,4 +123,41 @@ main {
   max-width: 1200px;
   margin: auto;
   padding: 20px;
+}
+
+/* ===== ACTIONS ===== */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.actions a {
+  background: #1f6feb;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.actions a:hover {
+  background: #0b4fc2;
+}
+
+/* ===== BOUTON EXTERNE ===== */
+.external-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #0b2d4d;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.external-btn:hover {
+  background: #1f6feb;
 }
