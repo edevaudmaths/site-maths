@@ -1,17 +1,17 @@
 
-/* ===== SOUS-ONGLETS ===== */
-function showSec(id) {
+function showSec(id, event) {
 
-  const sections = document.querySelectorAll(".sub-section");
-  sections.forEach(s => s.classList.remove("active"));
+  document.querySelectorAll(".sub-section")
+    .forEach(s => s.classList.remove("active"));
 
   document.getElementById(id).classList.add("active");
 
-  const buttons = document.querySelectorAll(".sub-btn");
-  buttons.forEach(b => b.classList.remove("active"));
+  document.querySelectorAll(".sub-btn")
+    .forEach(b => b.classList.remove("active"));
 
-  event.target.classList.add("active");
+  if (event) event.target.classList.add("active");
 }
+/* ===== SOUS-ONGLETS ===== */
 
 /* ===== MENU ACTIF AUTOMATIQUE ===== */
 document.addEventListener("DOMContentLoaded", () => {
