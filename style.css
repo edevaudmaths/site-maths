@@ -62,6 +62,20 @@ main {
   margin-top: 0;
   color: #0b2d4d;
 }
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* mobile */
+@media (max-width: 700px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* BOUTONS RESSOURCES */
 .actions {
