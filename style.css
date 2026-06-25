@@ -6,6 +6,14 @@ body {
   background: #f5f7fb;
   color: #1e2a38;
 }
+
+.home-info {
+  text-align: center;
+  font-size: 11px;
+  color: #8a8a8a;
+  margin-top: 6px;
+  font-style: italic;
+}
 .seconde main {
   background: #f3e8ff;
 }
