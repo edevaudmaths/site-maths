@@ -59,9 +59,11 @@ header {
 }
 
 .menu-btn.active {
-  background: #b8bec6;
+  background: #a0a7b1;
   color: white;
 }
+
+
 
 /* ===== SEARCH ===== */
 .search-box {
@@ -104,8 +106,9 @@ header {
 }
 
 .sub-btn.active {
-  background:#8b9199;
+  background: #a0a7b1;
   color: white;
+  border-color: #a0a7b1;
 }
 
 /* ===== SECTIONS ===== */
