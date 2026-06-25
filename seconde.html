@@ -9,32 +9,121 @@
 <body class="seconde">
 
 <header>
+
   <h1>Seconde</h1>
 
   <nav class="menu">
     <a class="menu-btn" href="index.html">Accueil</a>
     <a class="menu-btn active" href="seconde.html">Seconde</a>
     <a class="menu-btn" href="spe.html">Première Spé</a>
-    <a class="menu-btn " href="st2s.html">Première ST2S</a>
+    <a class="menu-btn" href="st2s.html">ST2S</a>
     <a class="menu-btn" href="bts.html">BTS</a>
   </nav>
 
   <div class="sub-menu">
     <button class="sub-btn active" onclick="showSec('cl',event)">Cours classe entière</button>
-    <button class="sub-btn  " onclick="showSec('dg',event)">Calcul Demi-Groupe</button>
+    <button class="sub-btn" onclick="showSec('dg',event)">Demi-groupe</button>
     <button class="sub-btn" onclick="showSec('auto',event)">Automatismes</button>
     <button class="sub-btn" onclick="showSec('ds',event)">DS</button>
   </div>
+
 </header>
-<div class="search-box">
-  <input type="text" id="searchInput" placeholder="🔎 Rechercher un chapitre..." onkeyup="searchChapters()">
-</div>
+
 <main>
 
-<!-- CLASSE ENTIERE -->
-<section id="cl" class="sub-section active">
-<div class="cards-container">
-  <div class="card">
+  <!-- SEARCH -->
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="🔎 Rechercher un chapitre..." onkeyup="searchChapters()">
+  </div>
+
+  <!-- ===== CLASSE ENTIÈRE ===== -->
+  <section id="cl" class="sub-section active">
+
+    <div class="cards-container">
+
+      <!-- exemple carte -->
+      <div class="card">
+        <h3>Chapitre 1</h3>
+        <p>...</p>
+        <div class="actions">
+          <a href="#">📖 Cours</a>
+          <a href="#">✏️ Exercices</a>
+          <a href="#">✅ Corrigé</a>
+          <a href="#">🤯 Supplémentaire</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Chapitre 2</h3>
+        <p>...</p>
+        <div class="actions">
+          <a href="#">📖 Cours</a>
+          <a href="#">✏️ Exercices</a>
+          <a href="#">✅ Corrigé</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ===== DEMI-GROUPE ===== -->
+  <section id="dg" class="sub-section">
+
+    <div class="cards-container">
+
+      <div class="card">
+        <h3>Calcul 1</h3>
+        <div class="actions">
+          <a href="#">📖 Cours</a>
+          <a href="#">✅ Corrigé</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ===== AUTOMATISMES ===== -->
+  <section id="auto" class="sub-section">
+
+    <div class="cards-container">
+
+      <div class="card">
+        <h3>Automatismes 1</h3>
+        <div class="actions">
+          <a href="#">📖 Fiche</a>
+          <a href="#">✏️ Interro</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ===== DS ===== -->
+  <section id="ds" class="sub-section">
+
+    <div class="cards-container">
+
+      <div class="card">
+        <h3>DS 1</h3>
+        <div class="actions">
+          <a href="#">📄 Sujet</a>
+          <a href="#">✅ Correction</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>  <div class="card">
     <h3>Chapitre 1 : ...</h3>
     <p>  .</p>
 
