@@ -167,3 +167,12 @@ main {
 .search-box input:focus {
   border-color: #1f6feb;
 }
+
+.sub-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
