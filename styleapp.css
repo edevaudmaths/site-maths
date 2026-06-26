@@ -272,22 +272,34 @@ main {
   padding: 8px;       /* ↓ réduit */
 }
 
-.app-card {
-  height: 90px;       /* ↓ plus compact */
-  border-radius: 14px;
-  font-size: 16px;
-}
 
-/* couleurs */
-.app-card.seconde { background: #a78bfa; }
-.app-card.spe     { background: #fdba74; }
-.app-card.st2s    { background: #f9a8d4; }
-.app-card.bts     { background: #93c5fd; }
+.app-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 90px;
+
+  border-radius: 15px;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  color: white;
+  text-decoration: none;
+
+  transition: 0.2s;
+}
 
 .app-card:hover {
   transform: scale(1.03);
   opacity: 0.9;
 }
+/* couleurs */
+.app-card.seconde { background: #a78bfa; }
+.app-card.spe     { background: #fdba74; }
+.app-card.st2s    { background: #f9a8d4; }
+.app-card.bts     { background: #93c5fd; }
 
 /* mobile uniquement */
 @media (max-width: 600px) {
